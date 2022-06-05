@@ -1,5 +1,6 @@
-import { Circle, useMediaQuery, useColorMode, Flex, Box, Text, Button, Image, Stack, Spacer } from '@chakra-ui/react';
+import { Circle, useMediaQuery, useColorMode, Flex, Box, Text, Button, Image, Stack, Spacer, HStack } from '@chakra-ui/react';
 import React from 'react'
+import MyImage from "../images/tunji.png"
 
 const Header = () => {
     const { coloMode, toggleColorMode } = useColorMode();
@@ -22,11 +23,14 @@ const Header = () => {
                 </Text>
                 <Button mt={8} colorScheme="blue" >View my Resume</Button>
             </Box>
+            <Box>
             <Image alignSelf="center" mt={isNotSmallScreen? "0":"12"}
                 mb={isNotSmallScreen?"0":"12"} borderRadius="full" 
                 backgroundColor="transparent" boxShadow="lg"
-                boxSize="300px" src='https://images.pexels.com/photos/35537/child-children-girl-happy.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500'
-            />    
+                boxSize="300px" src={MyImage}
+            />  
+
+            </Box>
         </Flex>
 
 

@@ -19,9 +19,6 @@ function App() {
         <Flex w="100%">
           <Heading  ml = "8" size="md" fontWeight= "semibold" color="cyan.400" >DEJ<Icon as= {FaBolt} boxSize={3}></Icon></Heading>
           <Spacer></Spacer>
-          {/* <IconButton ml={2} icon = {<FaGithub/>} isRound='true' size='lg' alignSelf='flex-end' />
-          <IconButton ml={2} icon = {<FaSun/>} isRound='true' size='lg' alignSelf='flex-end' />
-          <IconButton ml={2} icon = {<FaFacebook/>}  rounded="true"></IconButton> */}
           <IconButton ml={8} icon = { isDark? <FaSun/>: <FaMoon/>} isRound='true' size='lg' alignSelf='flex-end' onClick={toggleColorMode} />
           
         </Flex>
