@@ -1,8 +1,12 @@
+import { Flex } from '@chakra-ui/react'
 import React from 'react'
 
 const Profile = () => {
+    // const [isNotSmallScreen] = useMediaQuery("(min-width:600px)")
   return (
-    <div>Profile</div>
+    <Flex>
+
+    </Flex>
   )
 }
 
