@@ -1,4 +1,4 @@
-import { Circle, Stack, useMediaQuery, useColorMode, Flex, Box, Text, Button } from '@chakra-ui/react';
+import { Circle, Stack, useMediaQuery, useColorMode, Flex, Box, Text, Button, Image } from '@chakra-ui/react';
 import React from 'react'
 
 const Header = () => {
@@ -20,7 +20,12 @@ const Header = () => {
                     creating and executing innovative software solutions.
                 </Text>
                 <Button mt={8} colorScheme="blue" >View my Resume</Button>
-            </Box>    
+            </Box>
+            <Image alignSelf="center" mt={isNotSmallScreen? "0":"12"}
+                mb={isNotSmallScreen?"0":"12"} borderRadius="full" 
+                backgroundColor="transparent" boxShadow="lg"
+                boxSize="300px" src='../images/rock-unsplash.jpg'
+            />    
         </Flex>
 
 

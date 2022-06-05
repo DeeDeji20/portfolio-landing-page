@@ -22,7 +22,7 @@ function App() {
           <IconButton ml={2} icon = {<FaGithub/>} isRound='true' size='lg' alignSelf='flex-end' />
           <IconButton ml={2} icon = {<FaSun/>} isRound='true' size='lg' alignSelf='flex-end' />
           <IconButton ml={2} icon = {<FaFacebook/>}  rounded="true"></IconButton>
-          <IconButton ml={8} icon = { isDak? <FaSun/>: <FaMoon/>} isRound='true' size='lg' alignSelf='flex-end' onClick={toggleColorMode} />
+          <IconButton ml={8} icon = { isDak? <FaMoon/>: <FaSun/>} isRound='true' size='lg' alignSelf='flex-end' onClick={toggleColorMode} />
           
         </Flex>
        
