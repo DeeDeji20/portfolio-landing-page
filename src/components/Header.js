@@ -17,19 +17,19 @@ const Header = () => {
             <Box
              mt={isNotSmallScreen ? "0":"16px"} align ="flex-start"  mr="100" alignItems={{base:"center", md:"center", lg:"flex-start"}}>
                 <Text fontSize={{base:"3xl", md:"3xl", lg:"5xl"}} fontWeight="semibold">Hi, I am</Text>   
-                <Text fontSize={{base:"5xl", md:"3xl", lg:"7xl"}} fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.200, purple.600)" bgClip="text">Adeola Oladeji</Text> 
+                <Text fontSize={{base:"5xl", md:"3xl", lg:"7xl"}} fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.200, purple.600)" bgClip="text" textAlign={{base:"center", md:"left"}} w="inherit">Adeola Oladeji</Text> 
                 <Spacer/>
-                <Text color={isDark ? "gray.200" : "gray.500"} textAlign={{base:"left", md:"left"}} w="100%">
+                <Text color={isDark ? "gray.200" : "gray.500"} textAlign={{base:"center", md:"left"}} w="inherit">
                     A focused and passionate software engineer committed to
                     creating  and executing innovative software solutions.
                 </Text>
                 <Link href='https://docs.google.com/document/d/1BUg2-Sk7_aeZkihm55ljjSnreDt62nTK0zj515EzoEU/edit?usp=sharing'>
-                    <Button mt={8} colorScheme="blue" >View my Resume</Button>
+                    <Button mt={8} colorScheme="blue" ml={{base:"90px", md:"50px"}} w="inherit">View my Resume</Button>
                 </Link>
             </Box>
             <Box>
             <Image display={{base:"none", md:"block",lg:"inherit"}} alignSelf="center" mt={isNotSmallScreen? "0":"12"}
-                mb={isNotSmallScreen?"0":"12"} borderRadius="full" 
+                mb={isNotSmallScreen?"0":"12"} w={{base:"", md:"inherit", lg:"inherit"}}
                 
                 boxSize="300px" src={MyImage}
             />  

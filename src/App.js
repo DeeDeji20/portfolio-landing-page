@@ -1,11 +1,8 @@
-import {Flex, Heading, HStack, Icon, Spacer, useColorMode} from '@chakra-ui/react'
+import {Flex, Heading, Icon, Spacer, useColorMode} from '@chakra-ui/react'
 import {VStack, IconButton} from '@chakra-ui/react'
-import {FaFacebook, FaLinkedin, FaGithub, FaMailchimp, FaSun, FaMoon, FaBolt} from 'react-icons/fa'
-import Nav from './components/Nav';
-import About from './components/About';
+import {FaSun, FaMoon, FaBolt} from 'react-icons/fa'
 import Header from './components/Header';
 import Social from './components/Social';
-import Profile from './components/Profile';
 import BgImage from "./images/deola.jpg"
 
 function App() {
@@ -28,7 +25,6 @@ function App() {
        
         <Header/>
         <Social/>
-        <Profile/>
         
       </VStack>
 
