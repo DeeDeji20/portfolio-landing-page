@@ -1,4 +1,4 @@
-import { Circle, Link, useMediaQuery, useColorMode, Flex, Box, Text, Button, Image, Stack, Spacer, HStack } from '@chakra-ui/react';
+import { Circle, Link, useMediaQuery, useColorMode, Flex, Box, Text, Button, Image, Stack, Spacer } from '@chakra-ui/react';
 import React from 'react'
 
 import MyImage from "../images/Adeola Adedeji-modified 1.png"
@@ -16,8 +16,8 @@ const Header = () => {
 
             <Box
              mt={isNotSmallScreen ? "0":"16px"} align ="flex-start"  mr="100" alignItems={{base:"center", md:"center", lg:"flex-start"}}>
-                <Text fontSize={{base:"3xl", md:"3xl", lg:"5xl"}} fontWeight="semibold">Hi, I am</Text>   
-                <Text fontSize={{base:"5xl", md:"3xl", lg:"7xl"}} fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.200, purple.600)" bgClip="text" textAlign={{base:"center", md:"left"}} w="inherit">Adeola Oladeji</Text> 
+                <Text fontSize={{base:"3xl", md:"5xl", lg:"5xl"}} fontWeight="semibold">Hi, I am</Text>   
+                <Text fontSize={{base:"5xl", md:"5xl", lg:"7xl"}} fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.200, purple.600)" bgClip="text" textAlign={{base:"center", md:"left"}} w="inherit">Adeola Oladeji</Text> 
                 <Spacer/>
                 <Text color={isDark ? "gray.200" : "gray.500"} textAlign={{base:"center", md:"left"}} w="inherit">
                     A focused and passionate software engineer committed to
