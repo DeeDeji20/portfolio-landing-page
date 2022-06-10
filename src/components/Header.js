@@ -43,5 +43,3 @@ const Header = () => {
 }
 
 export default Header
-
-// backgroundImage= {{base:MyImage,md:"unset",lg:"unset"}} bgRepeat="no-repeat" bgSize="cover" bgPosition="center" width="100%"
