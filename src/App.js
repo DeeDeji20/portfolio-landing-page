@@ -11,7 +11,7 @@ function App() {
   
   return (
       
-      <VStack p={4} backgroundImage= { colorMode=== "dark" ? {base:`linear-gradient(to bottom, rgb(76 76 76 / 90%), rgb(12 1 9 / 85%)), url(${BgImage})`,md:"unset",lg:"unset"} : 
+      <VStack p={4} height={{base:"100vh"}} backgroundImage= { colorMode=== "dark" ? {base:`linear-gradient(to bottom, rgb(76 76 76 / 90%), rgb(12 1 9 / 85%)), url(${BgImage})`,md:"unset",lg:"unset"} : 
         {base:`linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url(${BgImage})`,md:"unset",lg:"unset"} }
         bgRepeat="no-repeat" bgSize="cover" bgPosition="center"
         width="100%">

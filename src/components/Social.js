@@ -3,6 +3,7 @@ import {Text, Box, HStack, Icon, Spacer, Link } from '@chakra-ui/react'
 import {FaFacebookF, FaLinkedin,FaTwitter, FaGithub, FaGoogle, FaSun, FaMoon} from 'react-icons/fa'
 
 const Social = () => {
+  const [isNotSmallScreen] = useMediaQuery("(min-width:600px)")
   return (
       
     <HStack spacing="14" ml="200" >

@@ -3,6 +3,7 @@ import React from 'react'
 
 import MyImage from "../images/Adeola Adedeji-modified 1.png"
 
+
 const Header = () => {
     const { coloMode, toggleColorMode } = useColorMode();
     const isDark = coloMode== "dark" 
@@ -13,9 +14,9 @@ const Header = () => {
         <Flex direction={isNotSmallScreen ? "row":"column"}
             p={isNotSmallScreen ? "32" : "0"}
             alignSelf="center">
-
+            
             <Box
-             mt={isNotSmallScreen ? "0":"16px"} align ="flex-start"  mr="100" alignItems={{base:"center", md:"center", lg:"flex-start"}}>
+             mt={isNotSmallScreen ? "0":"290px"} align ="flex-start" textAlign={{base:"center", md:"left", lg:"left"}}  alignItems={{base:"center", md:"center", lg:"flex-start"}}>
                 <Text fontSize={{base:"3xl", md:"5xl", lg:"5xl"}} fontWeight="semibold">Hi, I am</Text>   
                 <Text fontSize={{base:"5xl", md:"5xl", lg:"7xl"}} fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.200, purple.600)" bgClip="text" textAlign={{base:"center", md:"left"}} w="inherit">Adeola Oladeji</Text> 
                 <Spacer/>
@@ -24,7 +25,7 @@ const Header = () => {
                     creating  and executing innovative software solutions.
                 </Text>
                 <Link href='https://docs.google.com/document/d/1BUg2-Sk7_aeZkihm55ljjSnreDt62nTK0zj515EzoEU/edit?usp=sharing'>
-                    <Button mt={8} colorScheme="blue" ml={{base:"90px", md:"50px"}} w="inherit">View my Resume</Button>
+                    <Button mt={8} colorScheme="blue" ml={{base:"0", md:"50px"}} w="inherit">View my Resume</Button>
                 </Link>
             </Box>
             <Box>
