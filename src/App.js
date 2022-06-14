@@ -1,4 +1,4 @@
-import {Flex, Heading, Icon, Spacer, useColorMode} from '@chakra-ui/react'
+import {Flex, Heading, Icon, useMediaQuery, Spacer, useColorMode} from '@chakra-ui/react'
 import {VStack, IconButton} from '@chakra-ui/react'
 import {FaSun, FaMoon, FaBolt} from 'react-icons/fa'
 import Header from './components/Header';
@@ -8,6 +8,7 @@ import BgImage from "./images/deola.jpg"
 function App() {
 
   const { colorMode, toggleColorMode } = useColorMode();
+  const [isNotSmallScreen] = useMediaQuery("(min-width:600px)")
   
   return (
       
@@ -19,7 +20,7 @@ function App() {
         <Flex w="100%">
           <Heading  ml = "8" size="md" fontWeight= "semibold" color="cyan.400" >DEJ<Icon as= {FaBolt} boxSize={3}></Icon></Heading>
           <Spacer></Spacer>
-          <IconButton ml={8} icon = { colorMode=== "dark" ? <FaSun/>: <FaMoon/>} isRound='true' size='lg' alignSelf='flex-end' onClick={toggleColorMode} />
+          <IconButton ml={8} icon = { colorMode=== "dark" ? <FaSun/>: <FaMoon/>} isRound='true' size={isNotSmallScreen ? "lg":"sm"} alignSelf='flex-end' onClick={toggleColorMode} />
           
         </Flex>
        
