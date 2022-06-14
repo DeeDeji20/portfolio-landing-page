@@ -12,7 +12,7 @@ const Header = () => {
     <Stack >
         <Circle position="absolute" bg="blue" opacity="0.1" w="300px" h="300px" alignSelf="flex-end" display={{base:"none", md:"block", lg:"block"}} />
         <Flex direction={isNotSmallScreen ? "row":"column"}
-            p={isNotSmallScreen ? "32" : "2"}
+            p={isNotSmallScreen ? "32" : "0"}
             alignSelf="center">
             
             <Box
