@@ -15,7 +15,7 @@ const Social = () => {
               <Icon as={FaLinkedin} boxSize={isNotSmallScreen ? "30":"6"} cursor="pointer" color="blue.600"/>
             </Link>
             
-            <Link href=''>
+            <Link href='https://gmail.com'>
               <Icon as={FaGoogle} boxSize={isNotSmallScreen ? "30":"6"} cursor="pointer" color="red.600"/>
             </Link>
             
