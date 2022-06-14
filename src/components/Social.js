@@ -19,7 +19,7 @@ const Social = () => {
               <Icon as={FaGoogle} boxSize={isNotSmallScreen ? "30":"6"} cursor="pointer" color="red.600"/>
             </Link>
             
-            <Link href=''>
+            <Link href='https://twitter.com/DeeDeji20'>
               <Icon as={FaTwitter} boxSize={isNotSmallScreen ? "30":"6"} cursor="pointer" color="blue.500"/>
             </Link>
            
