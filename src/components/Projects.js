@@ -8,7 +8,9 @@ const Projects = () => {
       <Box w="100vw" p="5">
     <Flex direction={isNotSmallScreen? "row": "column"}
     w= "100%" mt="48"  max-width={{base: "100vh", md:"130vh", lg:"130vh", xl:"130vh"}}>
-         <Heading fontWeight="2xl" color="cyan.500" px="8">Portfolio</Heading>
+         
+        <Heading fontWeight="bold" color="cyan.500" px="8">Portfolio</Heading>
+        
         <Box alignSelf= "center" px="8" py="12">
             <Heading fontWeight="extrabold" color="cyan.500" size="4xl">
                 2+

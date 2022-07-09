@@ -5,6 +5,7 @@ import Contact from './components/Contact';
 import Header from './components/Header';
 import Projects from './components/Projects';
 import Social from './components/Social';
+import Technologies from './components/Technologies';
 import BgImage from "./images/deola.jpg"
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Social/>
         <Spacer/>
         <Projects/>
+        <Technologies/>
         <Contact/>
         
       </VStack>
