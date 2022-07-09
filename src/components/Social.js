@@ -8,7 +8,7 @@ const Social = () => {
       
     <HStack >
         <HStack spacing="14">
-            <Link href='https://chakra-ui.com'>
+            <Link href='https://www.facebook.com/deola30/'>
               <Icon as={FaFacebookF} boxSize={isNotSmallScreen ? "30":"6"} cursor="pointer" color="blue.700"/>
             </Link>
             <Link href='https://www.linkedin.com/in/adeola-oladeji-1032a6157/'>
